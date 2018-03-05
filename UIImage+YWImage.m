@@ -7,7 +7,6 @@
 //
 
 #import "UIImage+YWImage.h"
-#import <YYWebImage.h>
 
 @implementation UIImage (YWImage)
 
