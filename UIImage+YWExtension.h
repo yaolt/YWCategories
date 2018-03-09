@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (YWImage)
+@interface UIImage (YWExtension)
 
 /**
  将图片重新绘制，改变图片大小

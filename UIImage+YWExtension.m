@@ -1,14 +1,14 @@
 //
-//  UIImage+YWImage.m
+//  UIImage+YWExtension.m
 //  YWCategories
 //
 //  Created by coder on 2018/3/3.
 //  Copyright © 2018年 coder. All rights reserved.
 //
 
-#import "UIImage+YWImage.h"
+#import "UIImage+YWExtension.h"
 
-@implementation UIImage (YWImage)
+@implementation UIImage (YWExtension)
 
 /**
  根据给定的contentMode重新生成需要绘图的rect
