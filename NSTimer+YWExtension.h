@@ -6,6 +6,7 @@
 //  Copyright © 2018年 coder. All rights reserved.
 //
 //  参考了YYCategories相关内容
+//  其实可以使用GCD定时器，精度相对较高，不会受到NSRunLoop周期影响
 
 #import <Foundation/Foundation.h>
 
