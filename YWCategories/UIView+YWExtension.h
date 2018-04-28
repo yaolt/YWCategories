@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (YWExtension)
+
+/** 当前视图内容生成的图像*/
+@property (nonatomic, readonly, nullable) UIImage *yw_printScreenImage;
+
+
 /**
  裁切UIView
  如果裁切半径比View的宽或者高的一半大，根据高或者宽小的一半来裁切
@@ -17,6 +22,8 @@
  @param corner 裁切哪个角
  */
 - (void)yw_viewByRoundCornerRadius:(CGFloat)radius corner:(UIRectCorner)corner;
+
+
 
 @end
 

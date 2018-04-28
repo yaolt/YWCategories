@@ -10,6 +10,16 @@
 
 @implementation UIView (YWExtension)
 
+- (UIImage *)yw_printScreenImage{
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, YES, 0);
+    UIImage *resultImage = nil;
+    if([self drawViewHierarchyInRect:self.bounds afterScreenUpdates:YES]){
+        resultImage = UIGraphicsGetImageFromCurrentImageContext();
+    }
+    UIGraphicsEndImageContext();
+    return resultImage;
+}
+
 - (void)yw_viewByRoundCornerRadius:(CGFloat)radius corner:(UIRectCorner)corner{
 
     UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corner cornerRadii:CGSizeMake(radius, radius)];
